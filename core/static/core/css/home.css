@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.carousel-inner img {
+  height: 500px;
+  
+}
+/* .contenedor-fluid{
+  height: 300px;
+  width: 300%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+
+
+/* .contenedorTarjetas{
+   margin-left: 10%;
+  padding-left: 0%;
+} */
+
+.contenedorTarjetas {
+  /* margin-left: 10%; */
+  /* padding-left: 0%;
+  display: table;
+  width: 100% !important;
+  table-layout: fixed;
+  border-spacing: 10px; */
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.tarjetasValor {
+/* display: table-cell !important; */
+background-color: #cdbba3 #1d1b31; 
+border: 1px;
+/* margin: 6px; */
+/* white-space: nowrap; */
+/* overflow: hidden; */
+/* display: flex !important; */
+width: 100%;
+
+/* padding-left: 0%; */
+/* float: none; */
+/* margin: 1px; */
+}
+
+
+@media (max-width: 1210px) {
+.contenedorTarjetas {   
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-right: 1%;
+
+}
+
+.tarjetasValor {    
+  width: 100% !important;
+  margin-left: 6px !important;
+  margin-right: 2%;
+
+}
+
+
+
+}
+
+
+@media (max-width: 850px) {
+.contenedorTarjetas {
+  
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-right: 1%;
+
+}
+
+
+}
+@media (max-width: 910px) {
+.contenedorTarjetas {
+  
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  margin-right: 1%;
+
+}
+
+.tarjetasValor {
+  
+  width: 100% !important;
+  margin-left: 6px !important;
+
+}
+
+
+
+}
+
+
+.fecha{
+font-weight: bold;
+font-size:18px;
+}
+
+
+.valor{
+  font-weight: initial;
+  font-size: 27px;
+  }
+
+
+.titulo{
+  font-size:26px;
+  text-transform: uppercase;
+  background-color: #a5947e/*#1d1b31*/ !important;
+  font-weight: lighter;
+}
+
+/*
+.tarjetasValor{
+  margin: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    width: 511px;
+    background-color: #cdbba3/*#1d1b31*/ 
+    /*!important;
+    padding-left: 0%;
+}
+*/
+
+
+
+.card-body {
+
+background-color: #cdbba3 !important;
+}
+@media (max-width: 850px) {
+
+  .contenedorTarjetas{
+    margin-left: 0%;
+  }
+
+  .titulo{
+    font-size:15px;
+  }
+}
+
+
