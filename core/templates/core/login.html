@@ -1,5 +1,8 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Masterbikes</title>
     <!-- Required meta tags -->
@@ -16,7 +19,7 @@
         background:linear-gradient(to right,#a5947e ,#cdbba3,#FEFCFC); 
       }
       .bg{
-          background-image: url(img/imagen5.jpg);
+          background-image: url("{% static 'core/img/imagen6.jpg'%}");
           background-position: center center;
       }
     </style>
@@ -39,7 +42,7 @@
         </div>
         <div class="col bg-white p-5 rounded-end">
           <div class="text-end">
-            <img src="img/logo.JPG" alt="" width="48" height="25" class="align-text-top" style="font: size 10px; ;">
+            <img src="{% static 'core/img/logo.jpg'%}" alt="" width="48" height="25" class="align-text-top" style="font: size 10px; ;">
             Masterbikes
           </div>
 
@@ -58,8 +61,8 @@
             <br>
             <div class="d-grid">
               <!-- <button type="submit" class="btn btn-dark" href="Index.html">Iniciar Sesión</button> -->
-              <!-- <li><a href="{% url 'solicitudesArriendo.html' %}"> ingreso</a></li> -->
-              <a  href="{% url 'home'%}" class="btn bn-success btn-primary">Iniciar Sesión</a>        
+              <a href="{% url 'mantenedorBicicleta'%}" class="btn bn-success btn-dark">Iniciar Sesión</a>
+              <br>
             </div>
           </form>
 

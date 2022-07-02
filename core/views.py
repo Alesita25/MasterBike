@@ -26,7 +26,10 @@ def solicitudesArriendo(request):
     return render(request, 'core/solicitudesArriendo.html')
 def clientes(request):
     return render(request, 'core/clientes.html')
-
+def login(request):
+    return render(request, 'core/login.html')
+def registro(request):
+    return render(request, 'core/registro.html')
 
 def mantenedorBicicleta(request):
     bici= ArriendoForm()

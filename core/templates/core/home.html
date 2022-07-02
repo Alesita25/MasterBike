@@ -18,13 +18,13 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid col-lg-2 col-sm-1 col-md-2 d-none  d-xl-inline-flex" style="justify-content:flex-start">
-          <a class="navbar-brand" href="#" style=" font-size: smaller;">
+          <a class="navbar-brand" href="{% url 'login'%}" style=" font-size: smaller;">
             <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"  class="d-inline-block align-text-top">
             Mi cuenta
           </a>
         </div>
           <div class="container-fluid col-lg-2 col-sm-3 col-md-3 d-xl-inline-flex" style="justify-content:flex-start">
-          <a class="navbar-brand " href="#" style=" font-size: smaller;">
+          <a class="navbar-brand " href="{% url 'registro'%}" style=" font-size: smaller;">
             | Registrate!
           </a>
         </div>
@@ -102,7 +102,7 @@
             </ul>
     
           </div>
-          <a  href="Inicio.html">Cerrar Sesión</a>
+          <a  href="{% url 'login'%}">Cerrar Sesión</a>
         </nav>
         
         <!-- <div class="container-fluid"> -->
