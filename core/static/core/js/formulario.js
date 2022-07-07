@@ -14,7 +14,9 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+	usuario1: false,
+	password3: false
 }
 
 const validarFormulario = (e) => {
@@ -37,6 +39,12 @@ const validarFormulario = (e) => {
 		break;
 		case "telefono":
 			validarCampo(expresiones.telefono, e.target, 'telefono');
+		break;
+		case "usuario1":
+			validarCampo(expresiones.usuario1, e.target, 'usuario1');
+		break;
+		case "password3":
+			validarCampo(expresiones.password3, e.target, 'password3');
 		break;
 	}
 }
@@ -62,6 +70,8 @@ const validarCampo = (expresion, input, campo) => {
 const validarPassword2 = () => {
 	const inputPassword1 = document.getElementById('password');
 	const inputPassword2 = document.getElementById('password2');
+	const inputPassword3 = document.getElementById('password3');
+
 
 	if(inputPassword1.value !== inputPassword2.value){
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');

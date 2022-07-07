@@ -1,8 +1,8 @@
 from django.urls import URLPattern, path
 from .views import guia_despacho, home, clientes, mod_bicicleta,bor_bicicletas,cotizaciones,ingreso_pedidos,orden_compra,proveedores,inventario,solicitudesArriendo,mantenedorBicicleta,login,registro
+from django.contrib.auth.views import login
 
-
-urlpatterns = [
+urlpatterns =[
     path('', home, name="home"),
     path('clientes', clientes, name="clientes"),
     path('mod_bicicleta/<id>',mod_bicicleta,name='mod_bicicleta'),
@@ -15,6 +15,8 @@ urlpatterns = [
     path('inventario', inventario, name="inventario"),
     path('solicitudesArriendo', solicitudesArriendo, name="solicitudesArriendo"),
     path('mantenedorBicicleta', mantenedorBicicleta, name="mantenedorBicicleta"),
-    path('login',login, name="login"),
+    path('login','template_name':'login.html', name="login"),
     path('registro',registro, name="registro")
-]
+    
+    ]
+    
